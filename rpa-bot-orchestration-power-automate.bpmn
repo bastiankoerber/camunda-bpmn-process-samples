@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="2b12eab" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.3.0" camunda:diagramRelationId="77aff907-70b1-415d-b19f-8787afd6dfcb">
+  <bpmn:process id="Process_1lvv7at" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0ic5580</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_0sv5re6" name="Trigger Process" zeebe:modelerTemplate="io.camunda.connectors.PowerAutomate.v1" zeebe:modelerTemplateVersion="3" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg width=&#39;96&#39; height=&#39;96&#39; viewBox=&#39;0 0 96 96&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cdefs%3E%3Cfilter id=&#39;filter0_f&#39;%3E%3CfeFlood flood-opacity=&#39;0&#39; result=&#39;BackgroundImageFix&#39;/%3E%3CfeBlend mode=&#39;normal&#39; in=&#39;SourceGraphic&#39; in2=&#39;BackgroundImageFix&#39; result=&#39;shape&#39;/%3E%3CfeGaussianBlur stdDeviation=&#39;0.4&#39; result=&#39;effect1_foregroundBlur&#39;/%3E%3C/filter%3E%3Cfilter id=&#39;filter1_f&#39;%3E%3CfeFlood flood-opacity=&#39;0&#39; result=&#39;BackgroundImageFix&#39;/%3E%3CfeBlend mode=&#39;normal&#39; in=&#39;SourceGraphic&#39; in2=&#39;BackgroundImageFix&#39; result=&#39;shape&#39;/%3E%3CfeGaussianBlur stdDeviation=&#39;4&#39; result=&#39;effect1_foregroundBlur&#39;/%3E%3C/filter%3E%3ClinearGradient id=&#39;paint0_linear&#39; x1=&#39;43&#39; y1=&#39;55&#39; x2=&#39;29&#39; y2=&#39;10&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%230D36A5&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%231152D4&#39;/%3E%3C/linearGradient%3E%3ClinearGradient id=&#39;paint1_linear&#39; x1=&#39;46&#39; y1=&#39;10&#39; x2=&#39;46&#39; y2=&#39;86&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%2384CAFF&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%2361B1FB&#39;/%3E%3C/linearGradient%3E%3ClinearGradient id=&#39;paint2_linear&#39; x1=&#39;37.5&#39; y1=&#39;10&#39; x2=&#39;37.5&#39; y2=&#39;86&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%233B90F5&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%232A78EE&#39;/%3E%3C/linearGradient%3E%3CclipPath id=&#39;clip0&#39;%3E%3Crect width=&#39;96&#39; height=&#39;96&#39; fill=&#39;white&#39;/%3E%3C/clipPath%3E%3CclipPath id=&#39;clip1&#39;%3E%3Crect width=&#39;96&#39; height=&#39;96&#39; fill=&#39;white&#39;/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path=&#39;url(%23clip0)&#39;%3E%3Cg clip-path=&#39;url(%23clip1)&#39;%3E%3Cmask id=&#39;mask0&#39; mask-type=&#39;alpha&#39; maskUnits=&#39;userSpaceOnUse&#39; x=&#39;-1&#39; y=&#39;10&#39; width=&#39;97&#39; height=&#39;76&#39;%3E%3Cpath d=&#39;M61.2116 10C62.3496 10 63.4337 10.4847 64.1925 11.3328L94.6136 45.3328C95.9723 46.8514 95.9723 49.1486 94.6136 50.6672L64.1925 84.6672C63.4337 85.5153 62.3496 86 61.2116 86H3.94634C0.488777 86 -1.34012 81.9095 0.965366 79.3328L29 48L0.965366 16.6672C-1.34012 14.0905 0.488777 10 3.94634 10H61.2116Z&#39; fill=&#39;white&#39;/%3E%3C/mask%3E%3Cg mask=&#39;url(%23mask0)&#39;%3E%3Cpath d=&#39;M63 10L29 48L-5 10H63Z&#39; fill=&#39;url(%23paint0_linear)&#39;/%3E%3Cg filter=&#39;url(%23filter0_f)&#39;%3E%3Cpath d=&#39;M63 10.4L-5 86.4H63L97 48.4L63 10.4Z&#39; fill=&#39;black&#39; fill-opacity=&#39;0.24&#39;/%3E%3C/g%3E%3Cg filter=&#39;url(%23filter1_f)&#39;%3E%3Cpath d=&#39;M63 12L-5 88H63L97 50L63 12Z&#39; fill=&#39;black&#39; fill-opacity=&#39;0.32&#39;/%3E%3C/g%3E%3Cpath d=&#39;M-5 86L63 10L97 48L63 86H-5Z&#39; fill=&#39;url(%23paint1_linear)&#39;/%3E%3Cpath d=&#39;M-5 86L63 10L80 29L29 86H-5Z&#39; fill=&#39;url(%23paint2_linear)&#39;/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="io.camunda:http-json:1" />
+        <zeebe:ioMapping>
+          <zeebe:input source="triggerFlowRun" target="operationType" />
+          <zeebe:input source="" target="organizationUri" />
+          <zeebe:input target="authentication.type" />
+          <zeebe:input source="post" target="method" />
+          <zeebe:input target="workflowId" />
+          <zeebe:input target="connectionName" />
+          <zeebe:input source="1" target="connectionType" />
+          <zeebe:input source="attended" target="runMode" />
+          <zeebe:input source="normal" target="runPriority" />
+          <zeebe:input source="={&#34;Content-Type&#34;:&#34;application/json&#34;}" target="headers" />
+          <zeebe:input source="={&#34;runMode&#34;:if runMode = null then null else runMode, &#34;runPriority&#34;:if runPriority = null then null else runPriority,&#34;connectionName&#34;:if connectionName = null then null else connectionName,&#34;timeout&#34;:if runTimeout = null then 7200 else runTimeout,&#34;inputs&#34;:if runInputs = null then null else runInputs,&#34;connectionType&#34;:if connectionType = null then 1 else connectionType,&#34;callbackUrl&#34;:if callbackUrl = null then null else callbackUrl}" target="body" />
+          <zeebe:input source="20" target="connectionTimeoutInSeconds" />
+          <zeebe:input source="=organizationUri + &#34;/api/data/v9.2/workflows(&#34; + workflowId + &#34;)/Microsoft.Dynamics.CRM.RunDesktopFlow&#34;" target="url" />
+        </zeebe:ioMapping>
+        <zeebe:taskHeaders>
+          <zeebe:header key="resultVariable" />
+          <zeebe:header key="resultExpression" value="={flowSessionId: response.body.flowsessionId}" />
+          <zeebe:header key="errorExpression" />
+        </zeebe:taskHeaders>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0ic5580</bpmn:incoming>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0ic5580" sourceRef="StartEvent_1" targetRef="Activity_0sv5re6" />
+    <bpmn:serviceTask id="Activity_1qe4fkn" name="Get Flow Output" zeebe:modelerTemplate="io.camunda.connectors.PowerAutomate.v1" zeebe:modelerTemplateVersion="3" zeebe:modelerTemplateIcon="data:image/svg+xml;utf8,%3Csvg width=&#39;96&#39; height=&#39;96&#39; viewBox=&#39;0 0 96 96&#39; fill=&#39;none&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cdefs%3E%3Cfilter id=&#39;filter0_f&#39;%3E%3CfeFlood flood-opacity=&#39;0&#39; result=&#39;BackgroundImageFix&#39;/%3E%3CfeBlend mode=&#39;normal&#39; in=&#39;SourceGraphic&#39; in2=&#39;BackgroundImageFix&#39; result=&#39;shape&#39;/%3E%3CfeGaussianBlur stdDeviation=&#39;0.4&#39; result=&#39;effect1_foregroundBlur&#39;/%3E%3C/filter%3E%3Cfilter id=&#39;filter1_f&#39;%3E%3CfeFlood flood-opacity=&#39;0&#39; result=&#39;BackgroundImageFix&#39;/%3E%3CfeBlend mode=&#39;normal&#39; in=&#39;SourceGraphic&#39; in2=&#39;BackgroundImageFix&#39; result=&#39;shape&#39;/%3E%3CfeGaussianBlur stdDeviation=&#39;4&#39; result=&#39;effect1_foregroundBlur&#39;/%3E%3C/filter%3E%3ClinearGradient id=&#39;paint0_linear&#39; x1=&#39;43&#39; y1=&#39;55&#39; x2=&#39;29&#39; y2=&#39;10&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%230D36A5&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%231152D4&#39;/%3E%3C/linearGradient%3E%3ClinearGradient id=&#39;paint1_linear&#39; x1=&#39;46&#39; y1=&#39;10&#39; x2=&#39;46&#39; y2=&#39;86&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%2384CAFF&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%2361B1FB&#39;/%3E%3C/linearGradient%3E%3ClinearGradient id=&#39;paint2_linear&#39; x1=&#39;37.5&#39; y1=&#39;10&#39; x2=&#39;37.5&#39; y2=&#39;86&#39; gradientUnits=&#39;userSpaceOnUse&#39;%3E%3Cstop stop-color=&#39;%233B90F5&#39;/%3E%3Cstop offset=&#39;1&#39; stop-color=&#39;%232A78EE&#39;/%3E%3C/linearGradient%3E%3CclipPath id=&#39;clip0&#39;%3E%3Crect width=&#39;96&#39; height=&#39;96&#39; fill=&#39;white&#39;/%3E%3C/clipPath%3E%3CclipPath id=&#39;clip1&#39;%3E%3Crect width=&#39;96&#39; height=&#39;96&#39; fill=&#39;white&#39;/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path=&#39;url(%23clip0)&#39;%3E%3Cg clip-path=&#39;url(%23clip1)&#39;%3E%3Cmask id=&#39;mask0&#39; mask-type=&#39;alpha&#39; maskUnits=&#39;userSpaceOnUse&#39; x=&#39;-1&#39; y=&#39;10&#39; width=&#39;97&#39; height=&#39;76&#39;%3E%3Cpath d=&#39;M61.2116 10C62.3496 10 63.4337 10.4847 64.1925 11.3328L94.6136 45.3328C95.9723 46.8514 95.9723 49.1486 94.6136 50.6672L64.1925 84.6672C63.4337 85.5153 62.3496 86 61.2116 86H3.94634C0.488777 86 -1.34012 81.9095 0.965366 79.3328L29 48L0.965366 16.6672C-1.34012 14.0905 0.488777 10 3.94634 10H61.2116Z&#39; fill=&#39;white&#39;/%3E%3C/mask%3E%3Cg mask=&#39;url(%23mask0)&#39;%3E%3Cpath d=&#39;M63 10L29 48L-5 10H63Z&#39; fill=&#39;url(%23paint0_linear)&#39;/%3E%3Cg filter=&#39;url(%23filter0_f)&#39;%3E%3Cpath d=&#39;M63 10.4L-5 86.4H63L97 48.4L63 10.4Z&#39; fill=&#39;black&#39; fill-opacity=&#39;0.24&#39;/%3E%3C/g%3E%3Cg filter=&#39;url(%23filter1_f)&#39;%3E%3Cpath d=&#39;M63 12L-5 88H63L97 50L63 12Z&#39; fill=&#39;black&#39; fill-opacity=&#39;0.32&#39;/%3E%3C/g%3E%3Cpath d=&#39;M-5 86L63 10L97 48L63 86H-5Z&#39; fill=&#39;url(%23paint1_linear)&#39;/%3E%3Cpath d=&#39;M-5 86L63 10L80 29L29 86H-5Z&#39; fill=&#39;url(%23paint2_linear)&#39;/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="io.camunda:http-json:1" />
+        <zeebe:ioMapping>
+          <zeebe:input source="getFlowOutputs" target="operationType" />
+          <zeebe:input source="" target="organizationUri" />
+          <zeebe:input target="authentication.type" />
+          <zeebe:input source="get" target="method" />
+          <zeebe:input target="flowSessionId" />
+          <zeebe:input source="={&#34;Content-Type&#34;:&#34;application/json&#34;}" target="headers" />
+          <zeebe:input source="20" target="connectionTimeoutInSeconds" />
+          <zeebe:input source="=organizationUri + &#34;/api/data/v9.2/flowsessions(&#34; + flowSessionId + &#34;)/outputs/$value&#34;" target="url" />
+        </zeebe:ioMapping>
+        <zeebe:taskHeaders>
+          <zeebe:header key="resultVariable" />
+          <zeebe:header key="resultExpression" value="={flowOutputs: response.body}" />
+          <zeebe:header key="errorExpression" />
+        </zeebe:taskHeaders>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0ifw7sh</bpmn:incoming>
+      <bpmn:outgoing>Flow_0iwqcrm</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0ifw7sh" sourceRef="Event_09yr8x0" targetRef="Activity_1qe4fkn" />
+    <bpmn:endEvent id="Event_1gzvvdy">
+      <bpmn:incoming>Flow_0iwqcrm</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0iwqcrm" sourceRef="Activity_1qe4fkn" targetRef="Event_1gzvvdy" />
+    <bpmn:boundaryEvent id="Event_09yr8x0" name="gets triggered, when bot is done" attachedToRef="Activity_0sv5re6" zeebe:modelerTemplate="io.camunda.connectors.webhook.WebhookConnectorBoundary.v1" zeebe:modelerTemplateVersion="1" zeebe:modelerTemplateIcon="data:image/svg+xml,%3Csvg id=&#39;icon&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;18&#39; height=&#39;18&#39; viewBox=&#39;0 0 32 32&#39;%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d=&#39;M24,26a3,3,0,1,0-2.8164-4H13v1a5,5,0,1,1-5-5V16a7,7,0,1,0,6.9287,8h6.2549A2.9914,2.9914,0,0,0,24,26Z&#39;/%3E%3Cpath d=&#39;M24,16a7.024,7.024,0,0,0-2.57.4873l-3.1656-5.5395a3.0469,3.0469,0,1,0-1.7326.9985l4.1189,7.2085.8686-.4976a5.0006,5.0006,0,1,1-1.851,6.8418L17.937,26.501A7.0005,7.0005,0,1,0,24,16Z&#39;/%3E%3Cpath d=&#39;M8.532,20.0537a3.03,3.03,0,1,0,1.7326.9985C11.74,18.47,13.86,14.7607,13.89,14.708l.4976-.8682-.8677-.497a5,5,0,1,1,6.812-1.8438l1.7315,1.002a7.0008,7.0008,0,1,0-10.3462,2.0356c-.457.7427-1.1021,1.8716-2.0737,3.5728Z&#39;/%3E%3Crect id=&#39;_Transparent_Rectangle_&#39; data-name=&#39;&#38;lt;Transparent Rectangle&#38;gt;&#39; class=&#39;cls-1&#39; width=&#39;32&#39; height=&#39;32&#39;/%3E%3C/svg%3E">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="inbound.type" value="io.camunda:webhook:1" />
+          <zeebe:property name="inbound.subtype" value="ConfigurableInboundWebhook" />
+          <zeebe:property name="inbound.method" value="any" />
+          <zeebe:property name="inbound.context" value="e3af301d-b270-48b6-870b-766752c0cb58" />
+          <zeebe:property name="inbound.shouldValidateHmac" value="disabled" />
+          <zeebe:property name="inbound.auth.type" value="NONE" />
+          <zeebe:property name="correlationKeyExpression" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>Flow_0ifw7sh</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_069vn65" messageRef="Message_15hc5wk" />
+    </bpmn:boundaryEvent>
+    <bpmn:boundaryEvent id="Event_17yl7iu" attachedToRef="Activity_0sv5re6">
+      <bpmn:outgoing>Flow_172dhdy</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1j6vdj2">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">PT2H</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:boundaryEvent>
+    <bpmn:userTask id="Activity_1tqx9ae">
+      <bpmn:incoming>Flow_172dhdy</bpmn:incoming>
+      <bpmn:outgoing>Flow_047jypj</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_172dhdy" name="manual exception Handling, when we haven&#39;t received an answer after 2hr" sourceRef="Event_17yl7iu" targetRef="Activity_1tqx9ae" />
+    <bpmn:endEvent id="Event_15tjkam">
+      <bpmn:incoming>Flow_047jypj</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_047jypj" sourceRef="Activity_1tqx9ae" targetRef="Event_15tjkam" />
+  </bpmn:process>
+  <bpmn:message id="Message_15hc5wk" name="38c4b6c1-1dc7-42ed-af84-918ba88f7bc1" zeebe:modelerTemplate="io.camunda.connectors.webhook.WebhookConnectorBoundary.v1">
+    <bpmn:extensionElements>
+      <zeebe:subscription />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1lvv7at">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="150" y="100" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0sv5re6_di" bpmnElement="Activity_0sv5re6">
+        <dc:Bounds x="240" y="78" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1qe4fkn_di" bpmnElement="Activity_1qe4fkn">
+        <dc:Bounds x="410" y="156" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_15tjkam_di" bpmnElement="Event_15tjkam">
+        <dc:Bounds x="632" y="302" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1gzvvdy_di" bpmnElement="Event_1gzvvdy">
+        <dc:Bounds x="632" y="178" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1tqx9ae_di" bpmnElement="Activity_1tqx9ae">
+        <dc:Bounds x="410" y="280" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_083c68i_di" bpmnElement="Event_09yr8x0">
+        <dc:Bounds x="292" y="140" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="308" y="206" width="84" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0vaeodv_di" bpmnElement="Event_17yl7iu">
+        <dc:Bounds x="252" y="140" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0ic5580_di" bpmnElement="Flow_0ic5580">
+        <di:waypoint x="186" y="118" />
+        <di:waypoint x="240" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ifw7sh_di" bpmnElement="Flow_0ifw7sh">
+        <di:waypoint x="310" y="176" />
+        <di:waypoint x="310" y="196" />
+        <di:waypoint x="410" y="196" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iwqcrm_di" bpmnElement="Flow_0iwqcrm">
+        <di:waypoint x="510" y="196" />
+        <di:waypoint x="632" y="196" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_172dhdy_di" bpmnElement="Flow_172dhdy">
+        <di:waypoint x="270" y="176" />
+        <di:waypoint x="270" y="320" />
+        <di:waypoint x="410" y="320" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="286" y="326" width="87" height="66" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_047jypj_di" bpmnElement="Flow_047jypj">
+        <di:waypoint x="510" y="320" />
+        <di:waypoint x="632" y="320" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
